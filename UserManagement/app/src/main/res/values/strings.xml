@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UserManagement</string>
+    <string name="outgoing">outgoing</string>
+    <string name="incoming">incoming</string>
+</resources>

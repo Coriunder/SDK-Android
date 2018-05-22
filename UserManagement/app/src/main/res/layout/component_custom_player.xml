@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/rl_player_display"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/player_preview"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/preview_mp3"/>
+
+            <SurfaceView
+                    android:id="@+id/player_videoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/player_mess"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:id="@+id/player_buffering_progress"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"/>
+
+            <TextView
+                    android:id="@+id/player_mess_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="Buffering..."
+                    android:textColor="#f73c3c"
+                    android:textSize="16sp"
+                    android:visibility="visible"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp">
+
+            <TextView
+                    android:id="@+id/player_pasttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00"
+                    android:textColor="#f73c3c"
+                    android:textSize="16dp"/>
+
+            <View
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"/>
+
+            <SeekBar
+                    android:id="@+id/player_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:thumb="@drawable/seekbar_control"/>
+
+            <View
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    android:id="@+id/player_alltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--:--"
+                    android:textColor="#f73c3c"
+                    android:textSize="16dp"/>
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/downloadButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:src="@drawable/player_download_selector"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f73c3c"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+        <ImageView
+                android:id="@+id/player_playbutton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:src="@drawable/player_playbutton_selector"/>
+
+        <ImageView
+                android:id="@+id/player_prevbutton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/player_playbutton"
+                android:src="@drawable/player_previousbutton_selector"/>
+
+        <ImageView
+                android:id="@+id/player_nextbutton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/player_playbutton"
+                android:src="@drawable/player_nextbutton_selector"/>
+    </RelativeLayout>
+
+</LinearLayout>

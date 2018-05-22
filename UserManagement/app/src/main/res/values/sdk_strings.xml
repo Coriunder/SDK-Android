@@ -1,0 +1,90 @@
+<resources>
+    <string name="connection_error">No internet connection or host can\'t be resolved</string>
+    <string name="unknown_error">Something went wrong</string>
+    <string name="create_request_error">An error occurred while creating request</string>
+    <string name="empty_response_error">Received empty response</string>
+    <string name="sdk_error_refnumbers">Error when parsing refNumber with index </string>
+    <string name="session_not_started">Received empty credentials token. Session not started</string>
+    <string name="session_stopped">Session stopped</string>
+
+    <string name="error_merchant_currency">Error when parsing merchant currency with index </string>
+    <string name="error_merchant_language">Error when parsing merchant language with index </string>
+
+    <string name="customer_add_image_error">Error when adding profile image. Profile image not added</string>
+    <string name="customer_file_not_found">FileNotFoundException: </string>
+    <string name="customer_error_friend">Error when parsing friend with index </string>
+    <string name="customer_error_address">Error when parsing address with index </string>
+    <string name="customer_error_no_item">Something went wrong or there is no such address</string>
+    <string name="customer_error_register">Profile was saved, but local info wasn\'t updated. Call getCustomer to force updating local info</string>
+
+    <string name="cart_empty_product">Attempt to add an empty product</string>
+    <string name="cart_small_amount">Amount is too small. There is nothing to add.</string>
+    <string name="cart_wrong_merchant_cart">Attempt to add product to the cart of another merchant</string>
+    <string name="cart_wrong_stock">Attempt to send wrong stock</string>
+    <string name="cart_success">Success</string>
+    <string name="cart_wrong_quantity">Wrong product quantity. Product quantity should be divisible by step quantity (%1$s items for this product)</string>
+    <string name="cart_max_quantity_exceeded">Maximum quantity for the product %1$s is %2$s. You already have %3$s such products in the cart.
+        Can\'t add %4$s more such products. Maximum quantity to add is %5$s</string>
+    <string name="cart_available_quantity_exceeded">Available quantity for the product %1$s is %2$s. You already have %3$s such products in the cart.
+        Can\'t add %4$s more such products. Available quantity to add is %5$s</string>
+    <string name="cart_available_stock_quantity_exceeded">Available quantity for this stock of the product %1$s is %2$s. You already have %3$s such
+        products in the cart. Can\'t add %4$s more such products. Available quantity to add is %5$s</string>
+
+    <string name="balance_no_item">No such item</string>
+    <string name="balance_error_request">Error when parsing request with index </string>
+    <string name="balance_error_balance">Error when parsing balance item with index </string>
+
+    <string name="account_error_updating_credentials">Error: user credentials for relogin not updated</string>
+
+    <string name="appidentity_error_group">Error when parsing merchant group with index </string>
+
+    <string name="international_error_rate">Error when parsing currency rate with index </string>
+    <string name="international_error_code">Error when parsing error code with index </string>
+    <string name="international_error_country">Error when parsing country with index </string>
+    <string name="international_error_us_state">Error when parsing USA state with index </string>
+    <string name="international_error_ca_state">Error when parsing Canada state with index </string>
+    <string name="international_error_language">Error when parsing language with index </string>
+
+    <string name="transactions_error_transaction">Error when parsing transaction with index </string>
+    <string name="transactions_no_item">Transaction wasn\'t found or something went wrong</string>
+    <string name="transactions_error_lookup">Error when parsing lookup result with index </string>
+
+    <string name="pms_error_address">Error when parsing address with index </string>
+    <string name="pms_error_card_group">Error when parsing card group with index </string>
+    <string name="pms_error_pm">Error when parsing payment method with index </string>
+    <string name="pms_error_no_item">Something went wrong or there is no such payment method</string>
+    <string name="pms_error_save_pms">Error when parsing refNumber with index </string>
+
+    <string name="shop_error_products">Error when parsing product with index </string>
+    <string name="shop_error_merchants">Error when parsing merchant with index </string>
+    <string name="shop_error_categories">Error when parsing category with index </string>
+    <string name="shop_error_cart_items">Error when parsing cart item with index </string>
+    <string name="shop_error_carts">Error when parsing cart with index </string>
+    <string name="shop_error_properties">Error when parsing property with index </string>
+    <string name="shop_error_subcategories">Error when parsing subcategory with index </string>
+    <string name="shop_error_subproperties">Error when parsing subproperty with index </string>
+    <string name="shop_error_stocks">Error when parsing stock with index </string>
+    <string name="shop_error_stock_property">Error when parsing stock property with index </string>
+    <string name="shop_error_pms">Error when parsing payment method with index </string>
+    <string name="shop_error_no_cart">Something went wrong or there is no such cart</string>
+    <string name="shop_error_no_merchant">Something went wrong or there is no such merchant</string>
+    <string name="shop_error_no_product">Something went wrong or there is no such product</string>
+    <string name="shop_error_no_shop">Something went wrong or there is no such shop</string>
+    <string name="shop_error_shops">Error when parsing shop with index </string>
+    <string name="shop_error_countries">Error when parsing country with index </string>
+    <string name="shop_error_regions">Error when parsing regions with index </string>
+
+    <string name="merchant_error_card">Error when parsing card with index </string>
+    <string name="merchant_error_block">Error when parsing block with index </string>
+
+    <string name="sdk_log">BaseServiceLog</string>
+    <string name="account_log">AccountServiceLog</string>
+    <string name="appidentity_log">AppIdentityServiceLog</string>
+    <string name="balance_log">BalanceServiceLog</string>
+    <string name="customer_log">CustomerServiceLog</string>
+    <string name="international_log">InternationalServiceLog</string>
+    <string name="pms_log">PaymentMethodsServiceLog</string>
+    <string name="shop_log">ShopServiceLog</string>
+    <string name="transactions_log">TransactionsServiceLog</string>
+    <string name="merchant_log">MerchantServiceLog</string>
+</resources>
